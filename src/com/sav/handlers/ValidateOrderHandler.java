@@ -9,7 +9,7 @@ public class ValidateOrderHandler extends OrderHandler{
             System.out.println("The order is not valid");
         } else {
             System.out.println("Order is valid");
-            if (next !=null) next.handle(o);
+            if (next !=null) next(o);
         }
     }
 }

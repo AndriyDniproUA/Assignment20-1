@@ -9,6 +9,6 @@ public class PrintOrderHandler extends OrderHandler{
         System.out.println("Order ID: "+o.getID());
         System.out.println("Client: "+o.getFrom());
         System.out.println("Order contents: "+o.getText());
-        if (next!=null) next.handle(o);
+        if (next!=null) next(o);
     }
 }

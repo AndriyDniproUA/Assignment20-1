@@ -32,7 +32,7 @@ public class SaveOrderHandler extends OrderHandler {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        if (next!=null) next.handle(o);
+        if (next!=null) next(o);
     }
 }
 
